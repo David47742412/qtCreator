@@ -2,7 +2,7 @@
 #ifndef WIDGET_H
 #define WIDGET_H
 
-#include <QWidget>
+#include <QtWidgets/QWidget>
 
 
 
@@ -17,7 +17,7 @@ class Widget : public QWidget
 
 public:
     Widget(QWidget *parent = nullptr);
-    ~Widget();
+    ~Widget() override;
 
 private:
     Ui::Widget *ui;
